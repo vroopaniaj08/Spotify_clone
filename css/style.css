@@ -54,7 +54,8 @@ body{
     display: flex;
     gap: 13px;
     position: absolute;
-    bottom: 2px;
+    bottom: 0;
+    padding: 10px 0;
 }
 
 .footer a{
@@ -82,9 +83,10 @@ body{
     text-decoration: underline;
 }
 
-.spotifyPlaylists .card{
+.card{
     width: 200px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .card img{
@@ -107,4 +109,18 @@ body{
 
 .cardContainer{
     display: flex;
+    gap: 10px;
+    flex-wrap:wrap;
+}
+
+.play{
+    position:absolute;
+    top:160px;
+    right: 23px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.card:hover .play{
+    top: 150px;
+    opacity: 1;
 }
