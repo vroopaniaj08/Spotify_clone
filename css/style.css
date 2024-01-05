@@ -65,9 +65,12 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 65px;
     background-color: rgb(34,34,34);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+    box-sizing: border-box;
 }
 
 .header > *{
@@ -111,6 +114,8 @@ body{
     display: flex;
     gap: 10px;
     flex-wrap:wrap;
+    overflow-y: scroll;
+    max-height: 70vh;
 }
 
 .play{
@@ -123,4 +128,42 @@ body{
 .card:hover .play{
     top: 150px;
     opacity: 1;
+}
+
+.signUpBtn{
+    font-weight: bold;
+    background-color: rgb(34,34,34);
+    color: rgb(78, 78, 78);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.signUpBtn:hover{
+    transform: scale(1.1);
+    color:white;
+    font-weight: bold;
+}
+
+.button > *{
+    margin: 0 12px;
+}
+
+.loginBtn{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    box-sizing: border-box;
+}
+
+.loginBtn:hover{
+
+    font-weight: bold;
+    transform: scale(1.1);
+    align-items: center;
 }
